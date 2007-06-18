@@ -1,9 +1,9 @@
 Summary:	Simple yet powerful mind-mapping tool for the GNOME
-Summary(pl.UTF-8):Proste lecz potężne narzędzie do mapek umusłu dla GNOME
+Summary(pl.UTF-8):Proste lecz potężne narzędzie do mapek umysłu dla GNOME
 Name:		labyrinth
 Version:	0.3
 Release:	0.1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://download.gnome.org/sources/labyrinth/0.3/%{name}-%{version}.tar.gz
 # Source0-md5:	f7122423d8780053ec8de8c77cc7295b
@@ -13,6 +13,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gnome-desktop-devel
 BuildRequires:	intltool
 BuildRequires:	perl-XML-Parser
+BuildRequires:	python-gnome-devel >= 2.0
 BuildRequires:	python-pycairo-devel
 BuildRequires:	python-pygobject-devel
 BuildRequires:	python-pygtk-devel
