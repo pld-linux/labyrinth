@@ -9,15 +9,20 @@ Source0:	http://download.gnome.org/sources/labyrinth/0.3/%{name}-%{version}.tar.
 # Source0-md5:	f7122423d8780053ec8de8c77cc7295b
 URL:		http://www.gnome.org/~dscorgie/
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-desktop-devel
-BuildRequires:	intltool
+BuildRequires:	gnome-common
+BuildRequires:	gnome-desktop-devel >= 2.14
+BuildRequires:	intltool >= 0.35.0
 BuildRequires:	perl-XML-Parser
-BuildRequires:	python-gnome-devel >= 2.0
-BuildRequires:	python-pycairo-devel
-BuildRequires:	python-pygobject-devel
-BuildRequires:	python-pygtk-devel
+BuildRequires:	pkgconfig
+BuildRequires:	python >= 1:2.4
+BuildRequires:	python-gnome-devel >= 2.12
+BuildRequires:	python-pycairo-devel >= 1.0
+BuildRequires:	python-pygobject-devel >= 2.10
+BuildRequires:	python-pygtk-devel >= 2:2.8
+BuildRequires:	rpm-pythonprov
 Requires:	python-PyXML
-Requires:	python-pygtk-glade
+Requires:	python-pygobject >= 2.10
+Requires:	python-pygtk-glade >= 2:2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
