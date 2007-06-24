@@ -1,5 +1,5 @@
 Summary:	Simple yet powerful mind-mapping tool for the GNOME
-Summary(pl.UTF-8):Proste lecz potężne narzędzie do mapek umysłu dla GNOME
+Summary(pl.UTF-8):	Proste lecz potężne narzędzie do mapek umysłu dla GNOME
 Name:		labyrinth
 Version:	0.3
 Release:	0.1
@@ -8,7 +8,6 @@ Group:		X11/Applications
 Source0:	http://download.gnome.org/sources/labyrinth/0.3/%{name}-%{version}.tar.gz
 # Source0-md5:	f7122423d8780053ec8de8c77cc7295b
 URL:		http://www.gnome.org/~dscorgie/
-BuildRequires:	gcc
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-desktop-devel
 BuildRequires:	intltool
@@ -23,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Labyrinth is a lightweight mind-mapping tool, written in Python using
-Gtk and Cairo to do the drawing. It is intended to be as light and
+GTK+ and Cairo to do the drawing. It is intended to be as light and
 intuitive as possible, but still provide a wide range of powerful
 features.
 
@@ -34,10 +33,10 @@ and as an aid in study, organization, problem solving, and decision
 making.
 
 %description -l pl.UTF-8
-Labyrinth to lekkie narzędzie do mapek umysłu, napisane w Pythonie
-używająć Gtk i Cairo do rysowania. W zamiarach ma być najlżejsze
+Labyrinth to lekkie narzędzie do mapek umysłu, napisane w Pythonie z
+użyciem GTK+ i Cairo do rysowania. W zamierzeniu ma być najlżejsze
 i najbardziej intuicyjne jak to możliwe jednocześnie dostarczając
-szeroki zakres potężnych cech.
+szeroki zakres potężnych możliwości.
 
 Mapa umysłu to diagram używany do reprezentacji słów, idei, zadań
 albo innych elementów połączonych i ułożonych koliście wokół
@@ -68,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/labyrinth/
+%{_datadir}/labyrinth
 %{_iconsdir}/hicolor/*/apps/labyrinth.*
 %{_desktopdir}/labyrinth.desktop
 %dir %{py_sitescriptdir}/labyrinth
