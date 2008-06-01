@@ -1,12 +1,12 @@
 Summary:	Simple yet powerful mind-mapping tool for the GNOME
 Summary(pl.UTF-8):	Proste lecz potężne narzędzie do mapek umysłu dla GNOME
 Name:		labyrinth
-Version:	0.3
-Release:	0.1
+Version:	0.4.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://download.gnome.org/sources/labyrinth/0.3/%{name}-%{version}.tar.gz
-# Source0-md5:	f7122423d8780053ec8de8c77cc7295b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/labyrinth/0.4/%{name}-%{version}.tar.gz
+# Source0-md5:	465139aeeb039779295dd7f46dc1a48d
 URL:		http://www.gnome.org/~dscorgie/
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-common
@@ -20,6 +20,7 @@ BuildRequires:	python-pycairo-devel >= 1.0
 BuildRequires:	python-pygobject-devel >= 2.10
 BuildRequires:	python-pygtk-devel >= 2:2.8
 BuildRequires:	rpm-pythonprov
+Requires:	python-Numeric
 Requires:	python-PyXML
 Requires:	python-pygobject >= 2.10
 Requires:	python-pygtk-glade >= 2:2.8
@@ -62,6 +63,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/pt{_PT,}
 
 %find_lang %{name}
 
