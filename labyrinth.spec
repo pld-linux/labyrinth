@@ -2,7 +2,7 @@ Summary:	Simple yet powerful mind-mapping tool for the GNOME
 Summary(pl.UTF-8):	Proste lecz potężne narzędzie do mapek umysłu dla GNOME
 Name:		labyrinth
 Version:	0.4.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/labyrinth/0.4/%{name}-%{version}.tar.gz
@@ -66,6 +66,10 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/pt{_PT,}
 
+%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
+%py_comp $RPM_BUILD_ROOT%{py_sitedir}
+%py_postclean
+
 %find_lang %{name}
 
 %clean
@@ -79,4 +83,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/*/apps/labyrinth.*
 %{_desktopdir}/labyrinth.desktop
 %dir %{py_sitescriptdir}/labyrinth
-%{py_sitescriptdir}/labyrinth/*.pyc
+%{py_sitescriptdir}/labyrinth/*.py[co]
