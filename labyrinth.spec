@@ -20,6 +20,7 @@ BuildRequires:	python-pycairo-devel >= 1.0
 BuildRequires:	python-pygobject-devel >= 2.10
 BuildRequires:	python-pygtk-devel >= 2:2.8
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-Numeric
 Requires:	python-PyXML
 Requires:	python-pygobject >= 2.10
