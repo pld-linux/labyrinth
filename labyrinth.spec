@@ -2,7 +2,7 @@ Summary:	Simple yet powerful mind-mapping tool for the GNOME
 Summary(pl.UTF-8):	Proste lecz potężne narzędzie do mapek umysłu dla GNOME
 Name:		labyrinth
 Version:	0.4.0
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/labyrinth/0.4/%{name}-%{version}.tar.gz
