@@ -28,6 +28,8 @@ Requires:	python-pygobject >= 2.10
 Requires:	python-pygtk-glade >= 2:2.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%undefine	__cxx
+
 %description
 Labyrinth is a lightweight mind-mapping tool, written in Python using
 GTK+ and Cairo to do the drawing. It is intended to be as light and
@@ -42,16 +44,16 @@ making.
 
 %description -l pl.UTF-8
 Labyrinth to lekkie narzędzie do mapek umysłu, napisane w Pythonie z
-użyciem GTK+ i Cairo do rysowania. W zamierzeniu ma być najlżejsze
-i najbardziej intuicyjne jak to możliwe jednocześnie dostarczając
+użyciem GTK+ i Cairo do rysowania. W zamierzeniu ma być najlżejsze i
+najbardziej intuicyjne jak to możliwe jednocześnie dostarczając
 szeroki zakres potężnych możliwości.
 
-Mapa umysłu to diagram używany do reprezentacji słów, idei, zadań
-albo innych elementów połączonych i ułożonych koliście wokół
-centralnego słowa-klucza lub idei. Jest wykorzystywana do
-generowania, wizualizowania, strukturalizowania i klasyfikowania
-pomysłów i jako pomoc w nauce, organizacji, rozwiązywaniu
-problemów i podejmowaniu decyzji.
+Mapa umysłu to diagram używany do reprezentacji słów, idei, zadań albo
+innych elementów połączonych i ułożonych koliście wokół centralnego
+słowa-klucza lub idei. Jest wykorzystywana do generowania,
+wizualizowania, strukturalizowania i klasyfikowania pomysłów i jako
+pomoc w nauce, organizacji, rozwiązywaniu problemów i podejmowaniu
+decyzji.
 
 %prep
 %setup -q
