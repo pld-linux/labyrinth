@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/labyrinth/0.4/%{name}-%{version}.tar.gz
 # Source0-md5:	465139aeeb039779295dd7f46dc1a48d
 URL:		http://www.gnome.org/~dscorgie/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-common
 BuildRequires:	gnome-desktop-devel >= 2.14
 BuildRequires:	intltool >= 0.35.0
